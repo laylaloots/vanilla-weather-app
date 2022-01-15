@@ -1,0 +1,118 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: coral;
+}
+
+h1,
+h2 {
+  margin: 5px auto;
+}
+
+.additional-info {
+  color: rgb(141, 141, 141);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.app-card {
+  box-shadow: 0px 0px 6px rgb(224, 224, 224);
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+}
+
+.city-temperature {
+  text-align: right;
+}
+
+.coder-link {
+  text-decoration: none;
+  color: black;
+}
+
+.coder-link:hover {
+  color: coral;
+}
+
+.coder-name {
+  font-size: 10px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.current-button {
+  background-color: rgb(194, 72, 28);
+  border: none;
+  font-size: 12px;
+}
+
+.current-button:hover {
+  background-color: rgb(172, 64, 25);
+  border: none;
+  transition: 200ms all ease-in-out;
+}
+
+.humidity-temp {
+  text-align: right;
+}
+
+.row.city-weather {
+  padding: 30px 0;
+}
+
+.search-bar {
+  font-size: 12px;
+}
+
+.search-button {
+  background-color: coral;
+  border: none;
+  font-size: 12px;
+}
+
+.search-button:hover {
+  background-color: rgb(194, 72, 28);
+  border: none;
+  transition: 200ms all ease-in-out;
+}
+
+.temperatureChange {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 6px;
+  vertical-align: top;
+}
+
+.weather-info {
+  font-weight: 500;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.weekday {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.week-temperature {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.windspeed-temp {
+  text-align: right;
+}
+
+::selection {
+  background-color: coral;
+  color: #fff;
+}
