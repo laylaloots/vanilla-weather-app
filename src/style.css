@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  background: rgb(255, 246, 236);
 }
 
 a {
@@ -8,12 +9,16 @@ a {
 }
 
 a:hover {
-  color: coral;
+  color: #c3bef0;
 }
 
 h1,
 h2 {
   margin: 5px auto;
+}
+
+hr {
+  color: rgb(141, 141, 141);
 }
 
 .additional-info {
@@ -39,25 +44,13 @@ h2 {
 }
 
 .coder-link:hover {
-  color: coral;
+  color: #c3bef0;
 }
 
 .coder-name {
   font-size: 10px;
   padding-top: 15px;
   text-align: center;
-}
-
-.current-button {
-  background-color: rgb(194, 72, 28);
-  border: none;
-  font-size: 12px;
-}
-
-.current-button:hover {
-  background-color: rgb(172, 64, 25);
-  border: none;
-  transition: 200ms all ease-in-out;
 }
 
 .humidity-temp {
@@ -73,13 +66,13 @@ h2 {
 }
 
 .search-button {
-  background-color: coral;
+  background-color: #c3bef0;
   border: none;
   font-size: 12px;
 }
 
 .search-button:hover {
-  background-color: rgb(194, 72, 28);
+  background-color: #cca8e9;
   border: none;
   transition: 200ms all ease-in-out;
 }
@@ -113,6 +106,6 @@ h2 {
 }
 
 ::selection {
-  background-color: coral;
+  background-color: #c3bef0;
   color: #fff;
 }

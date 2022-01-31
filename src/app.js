@@ -85,21 +85,6 @@ function changeCelsuisTemp(event) {
   celciusTemp.innerHTML = `26`;
 }
 
-function displayLocation(position) {
-  let apiKey = "bc8fe9a48540e9a4e0671cbdd1073710";
-  let units = "metric";
-  let latitude = position.coords.latitude;
-  let longitude = position.coords.longitude;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
-
-  axios.get(apiUrl).then(showCityAndTemperature);
-}
-
-function showPosition(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(displayLocation);
-}
-
 let search = document.querySelector("#city-search-form");
 search.addEventListener("submit", changeCityName);
 
@@ -109,5 +94,4 @@ fahrenheit.addEventListener("click", changeFahrenheitTemp);
 let celcius = document.querySelector("#celsuis-temp");
 celcius.addEventListener("click", changeCelsuisTemp);
 
-let currentButton = document.querySelector("#current-button");
-currentButton.addEventListener("click", showPosition);
+showCityAndTemperature("Wellington");
