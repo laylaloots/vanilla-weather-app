@@ -85,6 +85,10 @@ hr {
   vertical-align: top;
 }
 
+.weather-description {
+  text-transform: capitalize;
+}
+
 .weather-info {
   padding: 10px 0px;
   font-weight: 500;

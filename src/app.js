@@ -62,7 +62,13 @@ function showCityAndTemperature(response) {
   )} km/hour`;
 
   let weatherDescription = document.querySelector("#description");
-  weatherDescription.innerHTML = `${response.data.weather[0].main}`;
+  weatherDescription.innerHTML = `${response.data.weather[0].description}`;
+
+  let weatherIcon = document.querySelector("#weather-icon");
+  weatherIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function temperatureDisplay(cityName) {
@@ -94,4 +100,4 @@ fahrenheit.addEventListener("click", changeFahrenheitTemp);
 let celcius = document.querySelector("#celsuis-temp");
 celcius.addEventListener("click", changeCelsuisTemp);
 
-showCityAndTemperature("Wellington");
+temperatureDisplay("Wellington");
