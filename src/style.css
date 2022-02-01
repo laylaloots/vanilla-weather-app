@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: rgb(255, 246, 236);
+  background-color: #f9f9f9;
 }
 
 a {
@@ -66,13 +66,13 @@ hr {
 }
 
 .search-button {
-  background-color: #c3bef0;
+  background-color: #a393eb;
   border: none;
   font-size: 12px;
 }
 
 .search-button:hover {
-  background-color: #cca8e9;
+  background-color: #5e63b6;
   border: none;
   transition: 200ms all ease-in-out;
 }
