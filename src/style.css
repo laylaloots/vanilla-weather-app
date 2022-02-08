@@ -9,7 +9,7 @@ a {
 }
 
 a:hover {
-  color: #c3bef0;
+  color: #a393eb;
 }
 
 h1,
@@ -17,13 +17,9 @@ h2 {
   margin: 0 auto;
 }
 
-hr {
-  color: rgb(141, 141, 141);
-}
-
 .additional-info {
   color: rgb(141, 141, 141);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
 }
 
@@ -36,15 +32,6 @@ hr {
 
 .city-temperature {
   text-align: right;
-}
-
-.coder-link {
-  text-decoration: none;
-  color: black;
-}
-
-.coder-link:hover {
-  color: #c3bef0;
 }
 
 .coder-name {
@@ -66,13 +53,13 @@ hr {
 }
 
 .search-button {
-  background-color: #a393eb;
+  background-color: #c3bef0;
   border: none;
   font-size: 12px;
 }
 
 .search-button:hover {
-  background-color: #5e63b6;
+  background-color: #a393eb;
   border: none;
   transition: 200ms all ease-in-out;
 }
@@ -83,6 +70,12 @@ hr {
   line-height: 24px;
   padding-left: 6px;
   vertical-align: top;
+}
+
+.temperatureChange .active {
+  color: #c3bef0;
+  cursor: default;
+  text-decoration: none;
 }
 
 .weather-description {

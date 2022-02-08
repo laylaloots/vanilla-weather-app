@@ -40,13 +40,13 @@ function changeCityName(event) {
 }
 
 function showCityAndTemperature(response) {
-  console.log(response);
-
   let name = document.querySelector("#display-city-name");
   name.innerHTML = response.data.name;
 
+  celciusTemperature = response.data.main.temp;
+
   let tempChange = document.querySelector("#main-temp");
-  tempChange.innerHTML = Math.round(response.data.main.temp);
+  tempChange.innerHTML = Math.round(celciusTemperature);
 
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = `Humidity: ${Math.round(response.data.main.humidity)}%`;
@@ -81,15 +81,22 @@ function temperatureDisplay(cityName) {
 
 function changeFahrenheitTemp(event) {
   event.preventDefault();
-  let fahrenheitTemp = document.querySelector("#main-temp");
-  fahrenheitTemp.innerHTML = `57`;
+  let displayTemp = document.querySelector("#main-temp");
+  let fahrenheitConversion = (celciusTemperature * 9) / 5 + 32;
+  displayTemp.innerHTML = Math.round(fahrenheitConversion);
+  celcius.classList.remove("active");
+  fahrenheit.classList.add("active");
 }
 
-function changeCelsuisTemp(event) {
+function changeCelsiusTemp(event) {
   event.preventDefault();
-  let celciusTemp = document.querySelector("#main-temp");
-  celciusTemp.innerHTML = `26`;
+  let displayTemp = document.querySelector("#main-temp");
+  displayTemp.innerHTML = Math.round(celciusTemperature);
+  celcius.classList.add("active");
+  fahrenheit.classList.remove("active");
 }
+
+let celciusTemperature = null;
 
 let search = document.querySelector("#city-search-form");
 search.addEventListener("submit", changeCityName);
@@ -98,6 +105,6 @@ let fahrenheit = document.querySelector("#fahrenheit-temp");
 fahrenheit.addEventListener("click", changeFahrenheitTemp);
 
 let celcius = document.querySelector("#celsuis-temp");
-celcius.addEventListener("click", changeCelsuisTemp);
+celcius.addEventListener("click", changeCelsiusTemp);
 
 temperatureDisplay("Wellington");
