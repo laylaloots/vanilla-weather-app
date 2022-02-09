@@ -104,16 +104,6 @@ h2 {
   font-weight: 300;
 }
 
-.weekday {
-  font-size: 14px;
-  padding-top: 10px;
-}
-
-.week-temperature {
-  font-size: 13px;
-  font-weight: 400;
-}
-
 .windspeed-temp {
   text-align: right;
 }
