@@ -15,11 +15,11 @@ a:hover {
 h1,
 h2 {
   margin: 0 auto;
+  padding-bottom: 10px
 }
 
 .additional-info {
-  color: rgb(141, 141, 141);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 300;
 }
 
@@ -34,6 +34,7 @@ h2 {
   text-align: right;
 }
 
+
 .coder-name {
   font-size: 10px;
   padding-top: 15px;
@@ -47,6 +48,9 @@ h2 {
 .humidity-temp {
   text-align: right;
 }
+
+
+
 
 .row.city-weather {
   padding: 10px 0;
@@ -104,7 +108,7 @@ h2 {
 
 .weather-forecast-temperature-min {
   color: rgb(141, 141, 141);
-  font-size: 12px;
+    font-size: 12px;
   font-weight: 300;
 }
 
@@ -118,5 +122,5 @@ h2 {
 }
 
 #weather-icon {
-  max-height: 65px;
+  max-height: 60px;
 }

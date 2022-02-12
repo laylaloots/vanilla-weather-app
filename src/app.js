@@ -105,9 +105,9 @@ function showCityAndTemperature(response) {
   )} °C`;
 
   let windspeed = document.querySelector("#windspeed");
-  windspeed.innerHTML = `Windspeed: ${Math.round(
+  windspeed.innerHTML = `Wind: ${Math.round(
     response.data.wind.speed
-  )} km/hour`;
+  )} km/h`;
 
   let weatherDescription = document.querySelector("#description");
   weatherDescription.innerHTML = `${response.data.weather[0].description}`;
