@@ -14,7 +14,7 @@ a:hover {
 
 h2 {
   margin: 0 auto;
-  font-size: 26px;
+  font-size: 25px;
   padding-bottom: 10px
 }
 
@@ -80,7 +80,6 @@ h2 {
   vertical-align: top;
 }
 
-
 .weather-description {
   text-transform: capitalize;
 }
@@ -117,7 +116,7 @@ h2 {
 }
 
 #main-temp{
-  font-size: 34px;
+  font-size: 32px;
 }
 
 #weather-icon {
