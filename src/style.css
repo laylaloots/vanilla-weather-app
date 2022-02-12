@@ -49,9 +49,6 @@ h2 {
   text-align: right;
 }
 
-
-
-
 .row.city-weather {
   padding: 10px 0;
 }
@@ -76,15 +73,9 @@ h2 {
   display: inline-block;
   font-size: 14px;
   line-height: 24px;
-  padding-left: 6px;
   vertical-align: top;
 }
 
-.temperatureChange .active {
-  color: #c3bef0;
-  cursor: default;
-  text-decoration: none;
-}
 
 .weather-description {
   text-transform: capitalize;

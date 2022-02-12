@@ -47,7 +47,6 @@ let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 return days[day];
 }
 
-
 function displayForecast(response) {
   let forecast = response.data.daily;
 
@@ -75,13 +74,11 @@ function displayForecast(response) {
     }
   });
  
-
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "bc8fe9a48540e9a4e0671cbdd1073710";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
@@ -129,32 +126,8 @@ function temperatureDisplay(cityName) {
   axios.get(apiUrl).then(showCityAndTemperature);
 }
 
-function changeFahrenheitTemp(event) {
-  event.preventDefault();
-  let displayTemp = document.querySelector("#main-temp");
-  let fahrenheitConversion = (celciusTemperature * 9) / 5 + 32;
-  displayTemp.innerHTML = Math.round(fahrenheitConversion);
-  celcius.classList.remove("active");
-  fahrenheit.classList.add("active");
-}
-
-function changeCelsiusTemp(event) {
-  event.preventDefault();
-  let displayTemp = document.querySelector("#main-temp");
-  displayTemp.innerHTML = Math.round(celciusTemperature);
-  celcius.classList.add("active");
-  fahrenheit.classList.remove("active");
-}
-
-let celciusTemperature = null;
-
 let search = document.querySelector("#city-search-form");
 search.addEventListener("submit", changeCityName);
 
-let fahrenheit = document.querySelector("#fahrenheit-temp");
-fahrenheit.addEventListener("click", changeFahrenheitTemp);
-
-let celcius = document.querySelector("#celsuis-temp");
-celcius.addEventListener("click", changeCelsiusTemp);
 
 temperatureDisplay("Wellington");
