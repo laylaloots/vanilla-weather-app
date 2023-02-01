@@ -91,19 +91,19 @@ h2 {
 
 .weather-forecast-date {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 20px;
 }
 
 .weather-forecast-temperature-max {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .weather-forecast-temperature-min {
   color: rgb(141, 141, 141);
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .windspeed-temp {
